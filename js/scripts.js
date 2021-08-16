@@ -3,9 +3,8 @@ $(document).ready(function() {
     event.preventDefault();
     const stringToSplit = $("input#entry").val();
     console.log(stringToSplit);
-    const space = ' '
     function splitIt(stringToSplit) {
-      let array = stringToSplit.split(space);
+      let array = stringToSplit.split(" ");
       let arrayNew = [] ;
       console.log(array);
       array.forEach(function (element) {
@@ -20,18 +19,13 @@ $(document).ready(function() {
 
 
     }
-    
+
     console.log(splitIt(stringToSplit))
   });
 });
 
 
-
-    // let favoriteThings = [animal, color, movie, superhero];
-    // console.log(favoriteThings);
-    // console.log(favoriteThings[0], favoriteThings[1], favoriteThings[2]);
-    // let newFavoriteThings = [];
-    // newFavoriteThings.push(favoriteThings[0], favoriteThings[1], favoriteThings[2]);
-    // console.log("newFavoriteThings = " + newFavoriteThings);
-
-
+**// alternate ben method for filtering by length and reversing:
+// const shortSentence = sentence.filter(word => word.length > 2);
+// const reverseSentence = shortSentence.reverse();
+// $("#result").text(reverseSentence.join(' '));
